@@ -4,8 +4,10 @@ module Blog
       include Blog::Controller
 
       action 'Index' do
+        expose :posts
+
         def call(params)
-          @posts = []
+          @posts = ["hello", "world"]
         end
       end
     end

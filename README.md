@@ -9,7 +9,9 @@ Run `./setup.sh`
 
 ## Credits
 
-Great thanks to Luca Guidi for creating Lotus Framework
+Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)
+
+Also thanks to Nikolay Nemshilov for his [pain.less.css](https://github.com/MadRabbit/pain.less.css)
 
 ## License
 

@@ -2,8 +2,28 @@
 <html>
   <head>
     <title>Microblog - Admin</title>
+    <link rel="stylesheet" type="text/css" href="/admin/stylesheets/pain.less.css" />
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <div class="paddings">
+        Admin
+      </div>
+    </header>
+    <main>
+      <div class="paddings">
+        <%= yield %>
+        <aside>
+          <nav>
+            <a href="/admin/posts">Posts</a>
+          </nav>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="paddings">
+        Copyright 2014 <a href="http://ruby-journal.com/">Trung Lê</a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,6 @@
 <article>
-  <form id="edit-post-<%= post.id %>" method="post" action="<%= Admin::Routes.url(:posts, id: post.id) %>">
+  <!-- <form id="edit-post-<%= post.id %>" method="post" action="<%= Admin::Routes.url(:posts, id: post.id) %>"> -->
+  <form id="edit-post-<%= post.id %>" method="post" action="/admin/posts/<%= post.id %>">
     <input type="hidden" name="_method" value="patch" />
 
     <p>
@@ -12,7 +13,9 @@
     </p>
 
     <p class="buttons">
-      <button type="submit">Update</button> or <a href="<%= Admin::Routes.url(:posts) %>">Back</a>
+      <!-- <a href="<%= Admin::Routes.url(:posts) %>">Back</a> -->
+
+      <button type="submit">Update</button> or <a href="/admin/posts">Back</a>
     </p>
   </form>
 </article>

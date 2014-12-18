@@ -1,6 +1,6 @@
 module Web::Controllers::Posts
   class Show
-    include Lotus::Action
+    include Web::Action
     expose :post
 
     def call(params)

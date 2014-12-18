@@ -1,6 +1,6 @@
 module Web::Controllers::Posts
   class Index
-    include Lotus::Action
+    include Web::Action
     expose :posts
 
     def call(params)

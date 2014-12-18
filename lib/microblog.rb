@@ -20,12 +20,12 @@ Lotus::Model.configure do
   # Database mapping
   #
   mapping do
-    # collection :users do
-    #   entity     User
-    #   repository UserRepository
-    #
-    #   attribute :id,   Integer
-    #   attribute :name, String
-    # end
+    collection :posts do
+      entity     Post
+
+      attribute :id,      Integer
+      attribute :title,   String
+      attribute :content, String
+    end
   end
 end.load!

@@ -14,7 +14,7 @@ gem 'lotusrb',                           github: 'lotus/lotus'
 gem 'sqlite3'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'byebug', require: false
 end
 
 group :test do

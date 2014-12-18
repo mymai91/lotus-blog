@@ -1,0 +1,17 @@
+<form id="edit-post-<%= post.id %>" method="post" action="<%= Admin::Routes.url(:posts, id: post.id) %>">
+  <input type="hidden" name="_method" value="patch" />
+  <fieldset>
+    <legend>Edit Post</legend>
+
+    <label for="title">Title</label>
+    <input type="text" name="post[title]" value="<%= post.title %>" placeholder="Title" required>
+
+    <label for="content">Content</label>
+    <textarea name="post[content]">
+      <%= post.content %>
+    </textarea>
+
+    <input type="submit" value="Update" />
+    <a href="<%= Admin::Routes.url(:posts) %>">Back</a>
+  </fieldset>
+</form>

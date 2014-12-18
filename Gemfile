@@ -13,6 +13,10 @@ gem 'lotusrb',                           github: 'lotus/lotus'
 
 gem 'sqlite3'
 
+group :development, :test do
+  gem 'byebug'
+end
+
 group :test do
   gem 'minitest'
   gem 'capybara'

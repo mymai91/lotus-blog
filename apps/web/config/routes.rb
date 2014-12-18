@@ -2,4 +2,4 @@
 # See: http://www.rubydoc.info/gems/lotus-router/#Usage
 #
 get '/', to: 'posts#index'
-resources :posts, only: [:index]
+resources :posts, only: [:index, :show]

@@ -17,6 +17,11 @@ Also thanks to Nikolay Nemshilov for his [pain.less.css](https://github.com/MadR
 
 MIT
 
+## TODO
+
+* Add support for migration generator / schema for Lotus Framework
+* Add pagination
+
 ## Contribution
 
 Please feel free to submit PRs :)

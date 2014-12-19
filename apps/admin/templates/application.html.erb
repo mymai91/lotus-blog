@@ -3,11 +3,15 @@
   <head>
     <title>Microblog - Admin</title>
     <link rel="stylesheet" type="text/css" href="/admin/stylesheets/pain.less.css" />
+    <link rel="stylesheet" type="text/css" href="/admin/stylesheets/main.css" />
   </head>
   <body>
     <header>
       <div class="paddings">
-        Admin
+        <a href="/admin" class="logo">Admin</a>
+        <nav>
+          <a href="/">Back to Frontend</a>
+        </nav>
       </div>
     </header>
     <main>
@@ -16,16 +20,16 @@
           <%= yield %>
         </article>
         <aside>
-          <nav>
+          <nav class="list">
             <a href="/admin/posts">List Posts</a>
-            <a href="/">Back to frontend</a>
           </nav>
         </aside>
       </div>
     </main>
     <footer>
       <div class="paddings">
-        Copyright 2014 <a href="http://ruby-journal.com/">Trung Lê</a>
+        <p>
+        Crafted with <span class="heart">&#10084;</span> by <a href="http://ruby-journal.com/">Trung Lê</a> - Hồ Chí Minh City, Vietnam
       </div>
     </footer>
   </body>

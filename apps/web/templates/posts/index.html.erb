@@ -1,7 +1,11 @@
 <div class="posts">
-  <h1 class="content-subhead">Recent Posts</h1>
+  <% if posts.any? %>
+    <h1>Recent Posts</h1>
 
-  <% posts.each do |post| %>
-    <%= render partial: 'posts/post', locals: { post: post } %>
+    <% posts.each do |post| %>
+      <%= render partial: 'posts/post', locals: { post: post } %>
+    <% end %>
+  <% else %>
+    <h1>You have no posts</h1>
   <% end %>
 </div>

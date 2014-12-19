@@ -1,0 +1,25 @@
+body > header {
+  background-color: #ED4D50;
+}
+
+body .logo {
+  font-size: 230%;
+}
+
+body > header a, body > header a:hover {
+  color: #FFFFFF;
+}
+
+body > footer {
+  background-color: #1B1F23;
+  color: #7F8C8D;
+}
+
+body > footer a, body > footer a:hover {
+  color: #FFFFFF;
+  text-decoration: none
+}
+
+body > footer span.heart {
+  color: #ED4D50;
+}

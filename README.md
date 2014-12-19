@@ -23,4 +23,4 @@ Please feel free to submit PRs :)
 
 ## Copyright
 
-© 2014 Trung Lê
+© 2014 &copy; Trung Lê - Made with &heart; in Melbourne, Australia

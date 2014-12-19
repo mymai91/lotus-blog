@@ -10,7 +10,7 @@ Lotus::Model.configure do
   #    adapter type: :memory, uri: 'memory://localhost/microblog_development'
   #
   #  * SQL adapter
-  adapter type: :sql, uri: 'sqlite://db/microblog_development.db'
+  adapter type: :sql, uri: ENV['MICROBLOG_DATABASE_URL']
   #    adapter type: :sql, uri: 'postgres://localhost/microblog_development'
   #    adapter type: :sql, uri: 'mysql://localhost/microblog_development'
   #

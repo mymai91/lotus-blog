@@ -1,6 +1,6 @@
 <!-- <form id="new-post" method="post" action="<%= Admin::Routes.url(:posts) %>"> -->
 <form id="new-post" method="post" action="/admin/posts">
-  <p>
+  <p class="required">
     <label for="title">Title</label>
     <input type="text" name="post[title]" value="<%= post.title %>" placeholder="Title" required>
   </p>

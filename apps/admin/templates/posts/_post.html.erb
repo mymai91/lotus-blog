@@ -2,7 +2,12 @@
   <td><%= post.title %></td>
   <td></td>
   <td>
+    <form id="delete-post-<%= post.id %>" method="post" action="/admin/posts/<%= post.id %>">
+      <input type="hidden" name="_method" value="delete" />
+    </form>
     <!-- <a href="<%= Admin::Routes.url(:edit_posts, id: post.id) %>">Edit</a> -->
-    <a href="/admin/posts/<%= post.id %>/edit">Edit</a>
+    <a href="/admin/posts/<%= post.id %>/edit" class="button">Edit</a>
+
+    <button type="submit" form="delete-post-<%= post.id %>" class="button danger">Destroy</button>
   </td>
 </tr>

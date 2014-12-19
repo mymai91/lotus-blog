@@ -36,6 +36,10 @@ module Admin
     configure :development do
       handle_exceptions false
       serve_assets      true
+
+      middleware.use Rack::Auth::Basic, "Protected Area" do |username, password|
+        username == 'admin' && password == ENV['ADMIN_PASSWORD']
+      end
     end
 
     configure :test do

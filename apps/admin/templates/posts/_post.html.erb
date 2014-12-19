@@ -1,10 +1,8 @@
-<section class="post" id="post-<%= post.id %>">
-  <header class="post-header">
-    <h2 class="post-title"><%= post.title %></h2>
-  </header>
-
-  <div class="post-content"><%= post.content %></div>
-  <div>
-    <a href="<%= Admin::Routes.url(:edit_posts, id: post.id) %>">Edit</a>
-  </div>
-</section>
+<tr>
+  <td><%= post.title %></td>
+  <td></td>
+  <td>
+    <!-- <a href="<%= Admin::Routes.url(:edit_posts, id: post.id) %>">Edit</a> -->
+    <a href="/admin/posts/<%= post.id %>/edit">Edit</a>
+  </td>
+</tr>

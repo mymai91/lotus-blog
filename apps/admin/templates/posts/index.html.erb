@@ -1,7 +1,11 @@
-<div class="posts">
-  <h1 class="content-subhead">All Posts (Admin View)</h1>
-
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Action</th>
+  </tr>
   <% posts.each do |post| %>
     <%= render partial: 'posts/post', locals: { post: post } %>
   <% end %>
-</div>
+</table>
+

@@ -32,4 +32,4 @@ Please feel free to submit PRs :)
 
 ## Copyright
 
-© 2014 &copy; Trung Lê - Made with &heart; in Melbourne, Australia
+© 2014 &copy; Trung Lê

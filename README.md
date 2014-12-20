@@ -32,4 +32,4 @@ Please feel free to submit PRs :)
 
 ## Copyright
 
-© 2014 &copy; Trung Lê
+© 2014 Trung Lê

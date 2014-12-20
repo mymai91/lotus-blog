@@ -21,6 +21,10 @@ MIT
 
 * Add support for migration generator / schema for Lotus Framework
 * Add pagination
+* Use named routes for Admin templates/forms (must be fixed in Lotus core)
+* Add unit / integration tests
+* Support user login feature (waiting for session non-persistence error to be resolved upstream in Lotus core)
+* Find a way to share vendor JS/stylesheets between 2 apps
 
 ## Contribution
 

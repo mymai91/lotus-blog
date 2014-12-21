@@ -20,6 +20,14 @@ Then you could browse the site with `0.0.0.0:2300`
 The admin page is at `/admin` and the default username/password is "admin/password". You can change
 password to what you like by modifying `ADMIN_PASSWORD` variable in `config/env.development`.
 
+## Ma! I passed my test!
+
+To run tests:
+
+```
+bundle exec rake spec
+```
+
 ## Credits
 
 Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)

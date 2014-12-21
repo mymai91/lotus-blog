@@ -7,6 +7,19 @@ Look no further Microblog is the first blog in Lotus Framework - EVER!
 
 Run `./setup.sh`
 
+## It works ma!
+
+To start the server:
+
+```
+bundle exec lotus server
+```
+
+Then you could browse the site with `0.0.0.0:2300`
+
+The admin page is at `/admin` and the default username/password is "admin/password". You can change
+password to what you like by modifying `ADMIN_PASSWORD` variable in `config/env.development`.
+
 ## Credits
 
 Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)

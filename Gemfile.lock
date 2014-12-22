@@ -1,61 +1,60 @@
 GIT
   remote: git://github.com/lotus/controller.git
-  revision: 975feb8788de34e1bc54011d0ac826b6152b1b11
+  revision: 534fc0efe5437b70fa570d676267dd45a7cbd035
   specs:
-    lotus-controller (0.3.0.dev)
-      lotus-utils (~> 0.3, >= 0.3.1.dev)
-      lotus-validations (~> 0.1, >= 0.2.0.dev)
+    lotus-controller (0.3.0)
+      lotus-utils (~> 0.3, >= 0.3.2)
+      lotus-validations (~> 0.2, >= 0.2.1)
       rack (~> 1.5)
 
 GIT
   remote: git://github.com/lotus/lotus.git
-  revision: 29ca76f9a37755978097fd6c5d5283f8037502ec
+  revision: df489cb5f780c49ed63ceccc7b9e473ebd4eed09
   specs:
-    lotusrb (0.2.0.dev)
+    lotusrb (0.2.0)
       dotenv (~> 1.0)
-      lotus-controller (>= 0.3.0.dev)
-      lotus-model (>= 0.2.0.dev)
-      lotus-router (>= 0.2.0.dev)
-      lotus-utils (~> 0.3, >= 0.3.0.dev)
-      lotus-view (>= 0.3.0.dev)
+      lotus-controller (~> 0.3)
+      lotus-router (~> 0.2)
+      lotus-utils (~> 0.3, >= 0.3.2)
+      lotus-view (~> 0.3)
       shotgun (~> 0.9)
-      thor (= 0.19.1)
+      thor (~> 0.19)
 
 GIT
   remote: git://github.com/lotus/model.git
-  revision: 17b037ea2cb5897ab565e3bc265451717fc53895
+  revision: 329b043936e3dc318aa7ba4bc129169f0500cfdf
   specs:
-    lotus-model (0.2.0.dev)
-      lotus-utils (~> 0.3, >= 0.3.2.dev)
+    lotus-model (0.2.0)
+      lotus-utils (~> 0.3, >= 0.3.2)
       sequel (~> 4.9)
 
 GIT
   remote: git://github.com/lotus/router.git
-  revision: a7512b936878c48bba9572b21d1eceb70df7ff10
+  revision: de5bf731fdafe707147689b23e97162df69eeeb5
   specs:
-    lotus-router (0.2.0.dev)
+    lotus-router (0.2.0)
       http_router (~> 0.11)
-      lotus-utils (~> 0.3, >= 0.3.1.dev)
+      lotus-utils (~> 0.3, >= 0.3.2)
 
 GIT
   remote: git://github.com/lotus/utils.git
-  revision: 54d050197dee4b397ace26693a482de2ab8d31fe
+  revision: 1882f349881dba1eb9e54e1c60cf976651b4391d
   specs:
-    lotus-utils (0.3.2.dev)
+    lotus-utils (0.3.2)
 
 GIT
   remote: git://github.com/lotus/validations.git
-  revision: 2d68cc8a45c5afe28da557ae73789c63cab57446
+  revision: 7f9dafbf9f6300076c3ca4e454ae5a8e33e1c8c0
   specs:
-    lotus-validations (0.2.1.dev)
-      lotus-utils (~> 0.3, >= 0.3.1)
+    lotus-validations (0.2.1)
+      lotus-utils (~> 0.3, >= 0.3.2)
 
 GIT
   remote: git://github.com/lotus/view.git
-  revision: ce56fdbd9f0814354c4701313b807718288cc953
+  revision: 07b287168b029564e40cc53e754be58b8e9aa997
   specs:
-    lotus-view (0.3.0.dev)
-      lotus-utils (~> 0.3, >= 0.3.0.dev)
+    lotus-view (0.3.0)
+      lotus-utils (~> 0.3, >= 0.3.2)
       tilt (~> 2.0, >= 2.0.1)
 
 GEM
@@ -82,7 +81,7 @@ GEM
     minitest (5.5.0)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
-    rack (1.5.2)
+    rack (1.6.0)
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.4.2)

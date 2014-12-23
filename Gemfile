@@ -11,6 +11,10 @@ group :development, :test do
   gem 'byebug', require: false
 end
 
+group :production do
+  gem 'puma'
+end
+
 group :test do
   gem 'minitest'
   gem 'capybara'

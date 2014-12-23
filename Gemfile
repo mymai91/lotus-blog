@@ -5,13 +5,14 @@ gem 'rake'
 
 gem 'lotusrb', '0.2.0'
 gem 'lotus-model', '0.2.0'
-gem 'sqlite3'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug', require: false
 end
 
 group :production do
+  gem 'pg'
   gem 'puma'
 end
 

@@ -179,6 +179,7 @@ module Admin
     # PRODUCTION
     #
     configure :production do
+      serve_assets true
       # scheme 'https'
       # host   'example.org'
       # port   443

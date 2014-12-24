@@ -28,6 +28,40 @@ To run tests:
 bundle exec rake spec
 ```
 
+## Deployment to Heroku
+
+Set up Heroku:
+
+```
+heroku create
+```
+
+Set up DB URL by getting the URL with:
+
+```
+heroku config | grep HEROKU_POSTGRESQL
+```
+
+You should get something like HEROKU_POSTGRESQL_COLOR, which value is used to set DB URI:
+
+
+```
+heroku config:set MICROBLOG_DATABASE_URL="postgres://something:something@ec2-54-225-101-202.compute-1.amazonaws.com:5432/something"
+```
+
+Then run
+
+```
+heroku run rake db:migrate
+heroku run rake db:seed
+```
+
+Last step is to set admin password:
+
+```
+heroku config:set ADMIN_PASSWORD="password"
+```
+
 ## Credits
 
 Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)

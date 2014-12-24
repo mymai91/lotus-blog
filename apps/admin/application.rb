@@ -146,6 +146,11 @@ module Admin
       view.prepare do
         # include MyRoutingHelpers # included in all the views
       end
+
+      # AUTH
+      middleware.use Rack::Auth::Basic, "Protected Area" do |username, password|
+        username == 'admin' && password == ENV['ADMIN_PASSWORD']
+      end
     end
 
     ##
@@ -157,10 +162,6 @@ module Admin
 
       # Serve static assets during development
       serve_assets      true
-
-      middleware.use Rack::Auth::Basic, "Protected Area" do |username, password|
-        username == 'admin' && password == ENV['ADMIN_PASSWORD']
-      end
     end
 
     ##

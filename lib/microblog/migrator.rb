@@ -10,6 +10,13 @@ module Microblog
         String :title
         String :content
       end
+
+      db.create_table! :users do
+        primary_key :id
+        String :email
+        String :first_name
+        String :last_name
+      end
     end
   end
 end

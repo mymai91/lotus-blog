@@ -8,6 +8,16 @@ String.class_eval do
   end
 end
 
+
+UserRepository.clear
+
+[
+  {first_name: 'Trung', last_name: 'Le', email: 'trung.le@ruby-journal.com'},
+].each do |user_attrs|
+  user = User.new(user_attrs)
+  UserRepository.persist(user)
+end
+
 PostRepository.clear
 
 [
@@ -81,4 +91,6 @@ PostRepository.clear
   post = Post.new(post_attrs)
   PostRepository.persist(post)
 end
+
+
 

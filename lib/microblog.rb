@@ -21,11 +21,20 @@ Lotus::Model.configure do
   #
   mapping do
     collection :posts do
-      entity     Post
+      entity Post
 
       attribute :id,      Integer
       attribute :title,   String
       attribute :content, String
+    end
+
+    collection :users do
+      entity User
+
+      attribute :id,         Integer
+      attribute :first_name, String
+      attribute :last_name,  String
+      attribute :email,      String
     end
   end
 end.load!

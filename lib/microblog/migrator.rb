@@ -16,6 +16,8 @@ module Microblog
         String :email
         String :first_name
         String :last_name
+        String :password_salt
+        String :password_hash
       end
     end
   end

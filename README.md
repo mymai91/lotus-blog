@@ -62,6 +62,18 @@ Last step is to set admin password:
 heroku config:set ADMIN_PASSWORD="password"
 ```
 
+Deploy with:
+
+```
+git push heroku master
+```
+
+Once done, try to the deployed app with:
+
+```
+heroku open
+```
+
 ## Credits
 
 Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)

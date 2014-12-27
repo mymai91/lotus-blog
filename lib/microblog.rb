@@ -26,6 +26,7 @@ Lotus::Model.configure do
       attribute :id,      Integer
       attribute :title,   String
       attribute :content, String
+      attribute :user_id, Integer
     end
 
     collection :users do

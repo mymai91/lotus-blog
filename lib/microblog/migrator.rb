@@ -9,6 +9,8 @@ module Microblog
         primary_key :id
         String :title
         String :content
+        Integer :user_id
+        index :user_id
       end
 
       db.create_table! :users do

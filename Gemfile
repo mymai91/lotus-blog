@@ -12,6 +12,7 @@ gem 'bcrypt'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', require: false
+  gem 'rspec'
 end
 
 group :production do

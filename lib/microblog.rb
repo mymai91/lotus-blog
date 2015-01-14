@@ -1,5 +1,5 @@
 require 'lotus/model'
-Dir["#{ __dir__ }/**/*.rb"].each { |file| require_relative file }
+Dir["#{ __dir__ }/microblog/**/*.rb"].each { |file| require_relative file }
 
 Lotus::Model.configure do
   # Database adapter
@@ -19,23 +19,5 @@ Lotus::Model.configure do
   ##
   # Database mapping
   #
-  mapping do
-    collection :posts do
-      entity Post
-
-      attribute :id,      Integer
-      attribute :title,   String
-      attribute :content, String
-      attribute :user_id, Integer
-    end
-
-    collection :users do
-      entity User
-
-      attribute :id,         Integer
-      attribute :first_name, String
-      attribute :last_name,  String
-      attribute :email,      String
-    end
-  end
+  mapping "#{__dir__}/config/mapping"
 end.load!

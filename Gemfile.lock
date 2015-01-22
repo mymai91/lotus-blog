@@ -26,7 +26,7 @@ GEM
       lotus-utils (~> 0.3, >= 0.3.2)
       lotus-validations (~> 0.2, >= 0.2.2)
       rack (~> 1.5)
-    lotus-model (0.2.0)
+    lotus-model (0.2.2)
       lotus-utils (~> 0.3, >= 0.3.2)
       sequel (~> 4.9)
     lotus-router (0.2.0)
@@ -91,8 +91,8 @@ DEPENDENCIES
   byebug
   capybara
   foreman
-  lotus-model (= 0.2.0)
-  lotusrb (= 0.2.0)
+  lotus-model
+  lotusrb
   minitest
   pg
   puma

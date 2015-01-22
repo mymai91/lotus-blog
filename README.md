@@ -99,4 +99,4 @@ Please feel free to submit PRs :)
 
 ## Copyright
 
-© 2014 Trung Lê
+© 2014-2015 Trung Lê

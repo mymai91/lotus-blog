@@ -1,5 +1,3 @@
-ENV['LOTUS_ENV'] = ENV['RACK_ENV'] ||= 'development'
-
 require 'rubygems'
 require 'bundler/setup'
 require 'lotus/setup'

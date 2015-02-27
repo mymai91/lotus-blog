@@ -1,3 +1,62 @@
+GIT
+  remote: git://github.com/lotus/controller.git
+  revision: 89afe187422277570bf9fa9ac7d7cbf3f6873825
+  specs:
+    lotus-controller (0.3.2)
+      lotus-utils (~> 0.3, >= 0.3.4)
+      lotus-validations (~> 0.2, >= 0.2.4)
+      rack (~> 1.5)
+
+GIT
+  remote: git://github.com/lotus/helpers.git
+  revision: c5cee43c512daec001c1ac1d27dd14c4748fb20f
+  specs:
+    lotus-helpers (0.1.0)
+      lotus-utils (~> 0.3)
+
+GIT
+  remote: git://github.com/lotus/lotus.git
+  revision: a80d891b9e45d65bada62b4fdc3cd73d0dd92b1f
+  specs:
+    lotusrb (0.2.1)
+      dotenv (~> 1.0)
+      lotus-controller (~> 0.3, >= 0.3.2)
+      lotus-router (~> 0.2, >= 0.2.1)
+      lotus-utils (~> 0.3, >= 0.3.4)
+      lotus-view (~> 0.3)
+      shotgun (~> 0.9)
+      thor (~> 0.19)
+
+GIT
+  remote: git://github.com/lotus/model.git
+  revision: f1d129e2b69afe7c677e36ed47a04ea7fdd4a2e1
+  specs:
+    lotus-model (0.2.4)
+      lotus-utils (~> 0.3, >= 0.3.2)
+      sequel (~> 4.9)
+
+GIT
+  remote: git://github.com/lotus/router.git
+  revision: 95db38bdc9ffb0f6b27cf0a1761056003657c1a4
+  specs:
+    lotus-router (0.2.1)
+      http_router (~> 0.11)
+      lotus-utils (~> 0.3, >= 0.3.2)
+
+GIT
+  remote: git://github.com/lotus/utils.git
+  revision: 0c96236fdc293f8a1f5d3768ce2f8ec773de2abb
+  specs:
+    lotus-utils (0.3.4)
+
+GIT
+  remote: git://github.com/lotus/view.git
+  revision: 03c49a272c62a9bbe349d12d66b060608064e00e
+  specs:
+    lotus-view (0.3.0)
+      lotus-utils (~> 0.3, >= 0.3.2)
+      tilt (~> 2.0, >= 2.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -21,30 +80,8 @@ GEM
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
-    lotus-controller (0.3.2)
-      lotus-utils (~> 0.3, >= 0.3.4)
-      lotus-validations (~> 0.2, >= 0.2.4)
-      rack (~> 1.5)
-    lotus-model (0.2.2)
-      lotus-utils (~> 0.3, >= 0.3.2)
-      sequel (~> 4.9)
-    lotus-router (0.2.1)
-      http_router (~> 0.11)
-      lotus-utils (~> 0.3, >= 0.3.2)
-    lotus-utils (0.3.4)
     lotus-validations (0.2.4)
       lotus-utils (~> 0.3, >= 0.3.4)
-    lotus-view (0.3.0)
-      lotus-utils (~> 0.3, >= 0.3.2)
-      tilt (~> 2.0, >= 2.0.1)
-    lotusrb (0.2.0)
-      dotenv (~> 1.0)
-      lotus-controller (~> 0.3)
-      lotus-router (~> 0.2)
-      lotus-utils (~> 0.3, >= 0.3.2)
-      lotus-view (~> 0.3)
-      shotgun (~> 0.9)
-      thor (~> 0.19)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
@@ -78,8 +115,13 @@ DEPENDENCIES
   byebug
   capybara
   foreman
-  lotus-model
-  lotusrb
+  lotus-controller!
+  lotus-helpers!
+  lotus-model!
+  lotus-router!
+  lotus-utils!
+  lotus-view!
+  lotusrb!
   minitest
   pg
   puma

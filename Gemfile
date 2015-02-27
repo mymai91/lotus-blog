@@ -5,8 +5,13 @@ ruby '2.2.0'
 gem 'bundler'
 gem 'rake'
 
-gem 'lotusrb'
-gem 'lotus-model'
+gem 'lotusrb', github: 'lotus/lotus'
+gem 'lotus-view', github: 'lotus/view'
+gem 'lotus-controller', github: 'lotus/controller'
+gem 'lotus-helpers', github: 'lotus/helpers'
+gem 'lotus-router', github: 'lotus/router'
+gem 'lotus-model', github: 'lotus/model'
+gem 'lotus-utils', github: 'lotus/utils'
 gem 'bcrypt'
 
 group :development, :test do

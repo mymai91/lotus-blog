@@ -3,6 +3,13 @@
 YOLO You are hyped when someone mention microservices?
 Look no further Microblog is the first blog in Lotus Framework - EVER!
 
+The app is created to demo the modularity of Lotus. It consists of 3
+apps:
+
+* admin - web frontend for administration
+* web   - web frontend for public
+* api   - web api
+
 ## Bootstrap
 
 Run `./setup.sh`
@@ -19,6 +26,9 @@ Then you could browse the site with `0.0.0.0:2300`
 
 The admin page is at `/admin` and the default username/password is "admin/password". You can change
 password to what you like by modifying `ADMIN_PASSWORD` variable in `config/env.development`.
+
+If you are interested in Web API, please look into `apps/api/v1`.
+You can do API call with curl: `curl -i -H "Accept: application/json" http://0.0.0.0:2300/api/v1/posts`
 
 ## Ma! I passed my test!
 
@@ -76,9 +86,10 @@ heroku open
 
 ## Credits
 
-Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)
-
-Also thanks to Nikolay Nemshilov for his [pain.less.css](https://github.com/MadRabbit/pain.less.css)
+* Great thanks to Luca Guidi for creating [Lotus Framework](http://lotusrb.org)
+* Also thanks to Nikolay Nemshilov for his [pain.less.css](https://github.com/MadRabbit/pain.less.css)
+* Thanks to Mike Williams for his [representative](https://github.com/mdub/representative) gem that I used
+to generate JSON
 
 ## License
 

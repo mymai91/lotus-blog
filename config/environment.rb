@@ -4,9 +4,11 @@ require 'lotus/setup'
 require_relative '../lib/microblog'
 require_relative '../apps/web/application'
 require_relative '../apps/admin/application'
+require_relative '../apps/api/v1/application'
 
 # NOTE: the ordering of mounting is important
 Lotus::Container.configure do
+  mount ApiV1::Application, at: '/api/v1'
   mount Admin::Application, at: '/admin'
   mount Web::Application,   at: '/'
 end

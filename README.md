@@ -28,7 +28,7 @@ The admin page is at `/admin` and the default username/password is "admin/passwo
 password to what you like by modifying `ADMIN_PASSWORD` variable in `config/env.development`.
 
 If you are interested in Web API, please look into `apps/api/v1`.
-You can do API call with curl: `curl -i -H "Accept: application/json" http://0.0.0.0:2300/api/v1/posts`
+You can do API call with curl: `curl -i -H "Accept: application/json" http://0.0.0.0:2300/api/v1/posts` or `curl -i -H "Accept: application/json" http://0.0.0.0:2300/api/v1/posts/:id`
 
 ## Ma! I passed my test!
 

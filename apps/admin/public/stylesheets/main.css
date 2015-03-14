@@ -80,6 +80,7 @@ body > footer span.heart {
 
 // utility class
 
+// spacing out
 .tiny-spacing-out-bottom {
   margin-bottom: 15px;
 }
@@ -100,6 +101,8 @@ body > footer span.heart {
   margin: 15px;
 }
 
+// spacing in
+
 .tiny-spacing-in-bottom {
   padding-bottom: 15px;
 }
@@ -118,4 +121,17 @@ body > footer span.heart {
 
 .tiny-spacing-in {
   padding: 15px;
+}
+
+// resize
+
+// just resize horizontal
+.resize-horizontal {
+  resize: horizontal;
+}
+
+// just resize vertical
+
+.resize-vertical {
+  resize: vertical;
 }

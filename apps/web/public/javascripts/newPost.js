@@ -57,7 +57,7 @@ var PostBlock = React.createClass({
   }
 });
 
-var displayPostComponent = React.renderComponent(
+var renderPostComponent = React.renderComponent(
   <PostComponent />,
   document.getElementById('posts')
 );

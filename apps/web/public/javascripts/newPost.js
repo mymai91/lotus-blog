@@ -58,7 +58,9 @@ var PostBlock = React.createClass({
   }
 });
 
-var renderPostComponent = React.renderComponent(
-  <PostComponent />,
-  document.getElementById('posts')
-);
+if ($('main').find('#posts').length > 0) {
+  var renderPostComponent = React.renderComponent(
+    <PostComponent />,
+    document.getElementById('posts')
+  );
+}

@@ -2,7 +2,7 @@
 
 var converter = new Showdown.converter();
 
-var editId = $('.contain-data-id').attr('data-id');
+var editId = $('#contain-data-id').attr('data-id');
 
 var PreviewPostComponent = React.createClass({
   mixins: [React.addons.LinkedStateMixin],

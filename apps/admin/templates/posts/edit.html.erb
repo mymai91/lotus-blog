@@ -1,5 +1,5 @@
 <!-- <form id="edit-post-<%= post.id %>" method="post" action="<%= Admin::Routes.url(:posts, id: post.id) %>"> -->
-<p><%= post.id %></p>
+
 <form id="edit-post-<%= post.id %>" method="post" action="/admin/posts/<%= post.id %>">
   <input type="hidden" name="_method" value="patch" class="contain-data-id" data-id="<%= post.id %>"/>
 

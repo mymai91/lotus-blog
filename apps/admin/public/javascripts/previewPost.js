@@ -64,7 +64,9 @@ var PreviewPostComponent = React.createClass({
   }
 });
 
-var renderPreviewPostComponent = React.renderComponent(
-  <PreviewPostComponent />,
-  document.getElementById('previewPost')
-);
+if ($('main').find('#previewPost').length > 0) {
+  var renderPreviewPostComponent = React.renderComponent(
+    <PreviewPostComponent />,
+    document.getElementById('previewPost')
+  );
+}

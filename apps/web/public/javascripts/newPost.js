@@ -46,7 +46,7 @@ var PostBlock = React.createClass({
   render: function () {
     var convertHtml = converter.makeHtml(this.props.content);
     return (
-      <section id={this.props.id} >
+      <section>
         <header class="post-header">
           <h2 class="post-title">
             <a href={this.props.path}>{this.props.title}</a>

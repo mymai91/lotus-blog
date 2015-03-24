@@ -2,7 +2,14 @@
 
 var converter = new Showdown.converter();
 
-var editId = $('#contain-data-id').attr('data-id');
+var formId = '#' + $('form').attr('id'),
+    id = formId.split('-').pop().toString();
+
+$(formId).trigger('custom', {id: id});
+
+$(document).on('custom', function (e, data) {
+  var id = data.id;
+});
 
 var PreviewPostComponent = React.createClass({
   mixins: [React.addons.LinkedStateMixin],
@@ -26,7 +33,7 @@ var PreviewPostComponent = React.createClass({
     }
   },
   componentWillMount: function () {
-    this.getPostContentEdit(editId);
+    this.getPostContentEdit(this.props.id);
   },
   openTabContent: function (e) {
     e.preventDefault();
@@ -66,7 +73,7 @@ var PreviewPostComponent = React.createClass({
 
 if ($('main').find('#previewPost').length > 0) {
   var renderPreviewPostComponent = React.renderComponent(
-    <PreviewPostComponent />,
+    <PreviewPostComponent id ={id}/>,
     document.getElementById('previewPost')
   );
 }

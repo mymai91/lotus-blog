@@ -1,4 +1,4 @@
-var postDetailId = $('#view-post-detail').attr('data-id');
+var postDetailId = $('.preview-post-detail').attr('id');
 
 var ViewPostDetailComponent = React.createClass({
   getInitialState: function () {

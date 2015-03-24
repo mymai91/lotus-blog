@@ -38,9 +38,9 @@ var ViewPostDetailComponent = React.createClass({
   }
 });
 
-if ($('main').find('#postDetail').length > 0) {
+if ($('main').find('#post__detail').length > 0) {
   var renderViewPostDetail = React.renderComponent(
     <ViewPostDetailComponent />,
-    document.getElementById('postDetail')
+    document.getElementById('post__detail')
   );
 }

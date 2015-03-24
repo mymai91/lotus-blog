@@ -24,55 +24,55 @@ body > footer span.heart {
   color: #ED4D50;
 }
 
-.tabs-header {
+.tabs__header {
   padding: 0;
   margin-bottom: 0;
 }
 
-.tab-title ,
-.tab-title a {
+.tab__title ,
+.tab__title a {
   border-radius: 5px 5px 0 0;
 }
 
-.tab-title {
+.tab__title {
   float: left;
   list-style: none;
   padding: 5px 0;
   width: auto;
 }
 
-.tab-title a {
+.tab__title a {
   border: 1px solid #ccc;
   color: #000;
   padding: 10px 20px;
   text-decoration: none;
 }
 
-.tabs-content,
-.tab-content {
+.tabs__content,
+.tab__content {
   border: 1px solid #ccc;
 }
 
-.tabs-content {
+.tabs__content {
   padding: 20px;
   margin-top: 1px;
 }
 
-.tab-content {
+.tab__content {
   display: none;
   min-height: 150px;
   width: 100%;
 }
 
-.tab-title .is-active {
+.tab__title .is_active {
     border-bottom: 1px solid #fff;
 }
 
-.tab-content.is-active {
+.tab__content.is_active {
   display: block;
 }
 
-.clear-fix {
+.clear_fix {
   clear: both;
   content: " ";
   display: table;
@@ -81,57 +81,57 @@ body > footer span.heart {
 // utility class
 
 // spacing out
-.tiny-spacing-out-bottom {
+.tiny_spacing_out_bottom {
   margin-bottom: 15px;
 }
 
-.tiny-spacing-out-top {
+.tiny_spacing_out_top {
   margin-top: 15px;
 }
 
-.tiny-spacing-out-right {
+.tiny_spacing_out_right {
   margin-right: 15px;
 }
 
-.tiny-spacing-out-left {
+.tiny_spacing_out_left {
   margin-left: 15px;
 }
 
-.tiny-spacing-out {
+.tiny_spacing_out {
   margin: 15px;
 }
 
 // spacing in
 
-.tiny-spacing-in-bottom {
+.tiny_spacing_in_bottom {
   padding-bottom: 15px;
 }
 
-.tiny-spacing-in-top {
+.tiny_spacing_in_top {
   padding-top: 15px;
 }
 
-.tiny-spacing-in-right {
+.tiny_spacing_in_right {
   padding-right: 15px;
 }
 
-.tiny-spacing-in-left {
+.tiny_spacing_in_left {
   padding-left: 15px;
 }
 
-.tiny-spacing-in {
+.tiny_spacing_in {
   padding: 15px;
 }
 
 // resize
 
 // just resize horizontal
-.resize-horizontal {
+.resize_horizontal {
   resize: horizontal;
 }
 
 // just resize vertical
 
-.resize-vertical {
+.resize_vertical {
   resize: vertical;
 }

@@ -39,31 +39,31 @@ var PreviewPostComponent = React.createClass({
     e.preventDefault();
     var target = $(e.target),
         idTag = target.attr('href');
-    $('.tab-title a').removeClass('is-active');
-    target.addClass('is-active');
-    $('.tabs .tab-content').removeClass('is-active');
-    $(idTag).addClass('is-active');
+    $('.tab__title a').removeClass('is_active');
+    target.addClass('is_active');
+    $('.tabs .tab__content').removeClass('is_active');
+    $(idTag).addClass('is_active');
   },
   render: function () {
     var postContent = converter.makeHtml(this.state.postContent);
     return (
-      <div className="tabs tiny-spacing-bottom">
-        <ul className="clear-fix tabs-header" onClick={this.openTabContent}>
-          <li className="tab-title">
-            <a href="#link-tab-write-content" className="is-active">Content</a>
+      <div className="tabs tiny_spacing_bottom">
+        <ul className="clear_fix tabs__header" onClick={this.openTabContent}>
+          <li className="tab__title">
+            <a href="#link__tab__write__content" className="is_active">Content</a>
           </li>
-          <li className="tab-title">
-            <a href="#link-tab-preview-preview">Preview</a>
+          <li className="tab__title">
+            <a href="#link__tab__preview__preview">Preview</a>
           </li>
         </ul>
-        <div className="tabs-content">
-          <textarea id="link-tab-write-content" 
-                    className="tab-content is-active resize-vertical" 
+        <div className="tabs__content">
+          <textarea id="link__tab__write__content" 
+                    className="tab__content is_active resize_vertical" 
                     name="post[content]" 
                     placeholder="Content"
                     valueLink={this.linkState('postContent')}></textarea>
-          <div id="link-tab-preview-preview" className="tab-content">
-            {this.state.postContent.length != 0 ? <p className="tiny-spacing-in-right tiny-spacing-in-left" dangerouslySetInnerHTML={{__html: postContent}}></p> : <p className="tiny-spacing-in-right tiny-spacing-in-left">Nothing to preview</p>}
+          <div id="link__tab__preview__preview" className="tab__content">
+            {this.state.postContent.length != 0 ? <p className="tiny_spacing_in_right tiny_spacing_in_left" dangerouslySetInnerHTML={{__html: postContent}}></p> : <p className="tiny_spacing_in_right tiny_spacing_in_left">Nothing to preview</p>}
           </div>
         </div>
       </div>
@@ -71,9 +71,9 @@ var PreviewPostComponent = React.createClass({
   }
 });
 
-if ($('main').find('#previewPost').length > 0) {
+if ($('main').find('#post__preview').length > 0) {
   var renderPreviewPostComponent = React.renderComponent(
     <PreviewPostComponent id ={id}/>,
-    document.getElementById('previewPost')
+    document.getElementById('post__preview')
   );
 }
